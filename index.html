@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasim Praise Onomehe | Personal Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="dot"></span> <span>Kasim Praise Onomehe</span></div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="top">
+      <div class="copy">
+        <p class="badge">Front-End Developer</p>
+        <h1><span id="typewriter" aria-label="Hello, I'm Kasim Praise Onomehe"></span><span class="cursor" aria-hidden="true">|</span></h1>
+        <p class="lead">Enthusiastic and detail-oriented Computer Science graduate with hands-on front-end experience. I build responsive, friendly interfaces with HTML, CSS, JavaScript, and Tailwind, and I thrive in collaborative, fast-learning environments.</p>
+        <div class="badges">
+          <span class="badge">Open to junior roles</span>
+          <span class="badge">Based in Lagos, Nigeria</span>
+          <span class="badge">Eager to learn</span>
+        </div>
+        <div class="actions">
+          <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Hire Me</button>
+          <button class="btn secondary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});">See Work</button>
+        </div>
+      </div>
+      <figure>
+        <div class="glow"></div>
+        <img src="assets/images/portrait-yellow.jpeg" alt="Portrait in yellow tee">
+      </figure>
+    </section>
+
+    <section id="about">
+      <div class="section-title"><span class="bar"></span><span>About</span></div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Profile</h3>
+          <p>Computer Science graduate (FUNAAB, Second Class Upper) with strong academic performance and practical IT exposure. Passionate about crafting accessible, responsive UIs and continuously improving through feedback.</p>
+        </div>
+        <div class="card">
+          <h3>What I Do</h3>
+          <p>Build clean front-end experiences with semantic HTML, modern CSS (including Tailwind), and JavaScript. I iterate quickly, test on real devices, and document what I learn.</p>
+        </div>
+        <div class="card">
+          <h3>Highlights</h3>
+          <p>Collaborated in Aptech SIWES program; practiced responsive layouts, solved coding challenges with peers, and documented processes that improved team efficiency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-title"><span class="bar"></span><span>Experience</span></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Front-End Trainee · Aptech Computer Education (SIWES)</h4>
+          <span>2024 · Lagos</span>
+          <p>Practiced HTML, CSS, and JavaScript fundamentals; built sample user interfaces and responsive layouts; collaborated with peers to solve coding challenges and document processes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title"><span class="bar"></span><span>Projects</span></div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Portfolio Starter</h3>
+          <p>Built this single-page personal site to showcase skills, photos, and contact details using semantic HTML, SCSS, and vanilla JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3>Responsive UI Practice</h3>
+          <p>Created multiple responsive layouts during SIWES, testing across breakpoints and focusing on accessibility-friendly color contrast.</p>
+        </div>
+        <div class="card">
+          <h3>Process Documentation</h3>
+          <p>Documented front-end setup steps and coding tips for classmates, improving onboarding speed and consistency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title"><span class="bar"></span><span>Skills</span></div>
+      <div class="skills" id="skills-list"></div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-title"><span class="bar"></span><span>Gallery</span></div>
+      <div class="gallery">
+        <figure><img src="assets/images/portrait-yellow.jpeg" alt="Portrait in yellow tee"></figure>
+        <figure><img src="assets/images/portrait-window.jpeg" alt="Portrait in pink top by window"></figure>
+        <figure><img src="assets/images/portrait-field.jpeg" alt="Casual outdoor pose by sports field"></figure>
+        <figure><img src="assets/images/portrait-black.jpeg" alt="Outdoor portrait in black outfit"></figure>
+        <figure><img src="assets/images/portrait-tie.jpeg" alt="Smiling portrait in white shirt and tie"></figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title"><span class="bar"></span><span>Contact</span></div>
+      <div class="contact">
+        <a href="mailto:praisekasim03@gmail.com"><span class="icon icon-mail" aria-hidden="true"></span>Email · praisekasim03@gmail.com</a>
+        <a href="tel:+2349132710915"><span class="icon icon-phone" aria-hidden="true"></span>Phone · +234 913 271 0915</a>
+        <a href="tel:+2348056173072"><span class="icon icon-phone" aria-hidden="true"></span>Alt Phone · +234 805 617 3072</a>
+        <a href="https://www.linkedin.com/in/praise-kasim" target="_blank" rel="noreferrer"><span class="icon icon-linkedin" aria-hidden="true"></span>LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer"><span class="icon icon-github" aria-hidden="true"></span>GitHub</a>
+        <a href="#top"><span class="icon icon-location" aria-hidden="true"></span>Lagos, Nigeria</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Built with semantic HTML, handcrafted SCSS, and vanilla JS · 2026</div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
