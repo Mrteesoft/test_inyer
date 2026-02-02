@@ -34,6 +34,25 @@ function attachImageFallback() {
 document.addEventListener("DOMContentLoaded", () => {
   renderSkills();
 
+  const navLinks = document.getElementById("nav-links");
+  const menuToggle = document.getElementById("menu-toggle");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.classList.toggle("active", isOpen);
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
   // Smooth scroll for nav links
   document.querySelectorAll('nav a[href^="#"]').forEach(link => {
     link.addEventListener("click", (e) => {
